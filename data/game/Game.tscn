@@ -1,0 +1,735 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://data/cards/base/Card.tscn" type="PackedScene" id=1]
+[ext_resource path="res://data/game/Game.gd" type="Script" id=2]
+
+[node name="Game" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+
+[node name="Grid" type="GridContainer" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -174.0
+margin_top = 62.0
+margin_right = 174.0
+margin_bottom = 348.0
+grow_horizontal = 2
+grow_vertical = 2
+columns = 8
+
+[node name="Tile" type="Button" parent="Grid"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile2" type="Button" parent="Grid"]
+margin_left = 44.0
+margin_right = 84.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile3" type="Button" parent="Grid"]
+margin_left = 88.0
+margin_right = 128.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile4" type="Button" parent="Grid"]
+margin_left = 132.0
+margin_right = 172.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile5" type="Button" parent="Grid"]
+margin_left = 176.0
+margin_right = 216.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile6" type="Button" parent="Grid"]
+margin_left = 220.0
+margin_right = 260.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile7" type="Button" parent="Grid"]
+margin_left = 264.0
+margin_right = 304.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile8" type="Button" parent="Grid"]
+margin_left = 308.0
+margin_right = 348.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile9" type="Button" parent="Grid"]
+margin_top = 44.0
+margin_right = 40.0
+margin_bottom = 84.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile10" type="Button" parent="Grid"]
+margin_left = 44.0
+margin_top = 44.0
+margin_right = 84.0
+margin_bottom = 84.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile11" type="Button" parent="Grid"]
+margin_left = 88.0
+margin_top = 44.0
+margin_right = 128.0
+margin_bottom = 84.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile12" type="Button" parent="Grid"]
+margin_left = 132.0
+margin_top = 44.0
+margin_right = 172.0
+margin_bottom = 84.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile13" type="Button" parent="Grid"]
+margin_left = 176.0
+margin_top = 44.0
+margin_right = 216.0
+margin_bottom = 84.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile14" type="Button" parent="Grid"]
+margin_left = 220.0
+margin_top = 44.0
+margin_right = 260.0
+margin_bottom = 84.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile15" type="Button" parent="Grid"]
+margin_left = 264.0
+margin_top = 44.0
+margin_right = 304.0
+margin_bottom = 84.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile16" type="Button" parent="Grid"]
+margin_left = 308.0
+margin_top = 44.0
+margin_right = 348.0
+margin_bottom = 84.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile17" type="Button" parent="Grid"]
+margin_top = 88.0
+margin_right = 40.0
+margin_bottom = 128.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile18" type="Button" parent="Grid"]
+margin_left = 44.0
+margin_top = 88.0
+margin_right = 84.0
+margin_bottom = 128.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile19" type="Button" parent="Grid"]
+margin_left = 88.0
+margin_top = 88.0
+margin_right = 128.0
+margin_bottom = 128.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile20" type="Button" parent="Grid"]
+margin_left = 132.0
+margin_top = 88.0
+margin_right = 172.0
+margin_bottom = 128.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile21" type="Button" parent="Grid"]
+margin_left = 176.0
+margin_top = 88.0
+margin_right = 216.0
+margin_bottom = 128.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile22" type="Button" parent="Grid"]
+margin_left = 220.0
+margin_top = 88.0
+margin_right = 260.0
+margin_bottom = 128.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile23" type="Button" parent="Grid"]
+margin_left = 264.0
+margin_top = 88.0
+margin_right = 304.0
+margin_bottom = 128.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile24" type="Button" parent="Grid"]
+margin_left = 308.0
+margin_top = 88.0
+margin_right = 348.0
+margin_bottom = 128.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile25" type="Button" parent="Grid"]
+margin_top = 132.0
+margin_right = 40.0
+margin_bottom = 172.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile26" type="Button" parent="Grid"]
+margin_left = 44.0
+margin_top = 132.0
+margin_right = 84.0
+margin_bottom = 172.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile27" type="Button" parent="Grid"]
+margin_left = 88.0
+margin_top = 132.0
+margin_right = 128.0
+margin_bottom = 172.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile28" type="Button" parent="Grid"]
+margin_left = 132.0
+margin_top = 132.0
+margin_right = 172.0
+margin_bottom = 172.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile29" type="Button" parent="Grid"]
+margin_left = 176.0
+margin_top = 132.0
+margin_right = 216.0
+margin_bottom = 172.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile30" type="Button" parent="Grid"]
+margin_left = 220.0
+margin_top = 132.0
+margin_right = 260.0
+margin_bottom = 172.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile31" type="Button" parent="Grid"]
+margin_left = 264.0
+margin_top = 132.0
+margin_right = 304.0
+margin_bottom = 172.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile32" type="Button" parent="Grid"]
+margin_left = 308.0
+margin_top = 132.0
+margin_right = 348.0
+margin_bottom = 172.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile33" type="Button" parent="Grid"]
+margin_top = 176.0
+margin_right = 40.0
+margin_bottom = 216.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile34" type="Button" parent="Grid"]
+margin_left = 44.0
+margin_top = 176.0
+margin_right = 84.0
+margin_bottom = 216.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile35" type="Button" parent="Grid"]
+margin_left = 88.0
+margin_top = 176.0
+margin_right = 128.0
+margin_bottom = 216.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile36" type="Button" parent="Grid"]
+margin_left = 132.0
+margin_top = 176.0
+margin_right = 172.0
+margin_bottom = 216.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile37" type="Button" parent="Grid"]
+margin_left = 176.0
+margin_top = 176.0
+margin_right = 216.0
+margin_bottom = 216.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile38" type="Button" parent="Grid"]
+margin_left = 220.0
+margin_top = 176.0
+margin_right = 260.0
+margin_bottom = 216.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile39" type="Button" parent="Grid"]
+margin_left = 264.0
+margin_top = 176.0
+margin_right = 304.0
+margin_bottom = 216.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile40" type="Button" parent="Grid"]
+margin_left = 308.0
+margin_top = 176.0
+margin_right = 348.0
+margin_bottom = 216.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile41" type="Button" parent="Grid"]
+margin_top = 220.0
+margin_right = 40.0
+margin_bottom = 260.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile42" type="Button" parent="Grid"]
+margin_left = 44.0
+margin_top = 220.0
+margin_right = 84.0
+margin_bottom = 260.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile43" type="Button" parent="Grid"]
+margin_left = 88.0
+margin_top = 220.0
+margin_right = 128.0
+margin_bottom = 260.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile44" type="Button" parent="Grid"]
+margin_left = 132.0
+margin_top = 220.0
+margin_right = 172.0
+margin_bottom = 260.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile45" type="Button" parent="Grid"]
+margin_left = 176.0
+margin_top = 220.0
+margin_right = 216.0
+margin_bottom = 260.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile46" type="Button" parent="Grid"]
+margin_left = 220.0
+margin_top = 220.0
+margin_right = 260.0
+margin_bottom = 260.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile47" type="Button" parent="Grid"]
+margin_left = 264.0
+margin_top = 220.0
+margin_right = 304.0
+margin_bottom = 260.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile48" type="Button" parent="Grid"]
+margin_left = 308.0
+margin_top = 220.0
+margin_right = 348.0
+margin_bottom = 260.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile49" type="Button" parent="Grid"]
+margin_top = 264.0
+margin_right = 40.0
+margin_bottom = 304.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile50" type="Button" parent="Grid"]
+margin_left = 44.0
+margin_top = 264.0
+margin_right = 84.0
+margin_bottom = 304.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile51" type="Button" parent="Grid"]
+margin_left = 88.0
+margin_top = 264.0
+margin_right = 128.0
+margin_bottom = 304.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile52" type="Button" parent="Grid"]
+margin_left = 132.0
+margin_top = 264.0
+margin_right = 172.0
+margin_bottom = 304.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile53" type="Button" parent="Grid"]
+margin_left = 176.0
+margin_top = 264.0
+margin_right = 216.0
+margin_bottom = 304.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile54" type="Button" parent="Grid"]
+margin_left = 220.0
+margin_top = 264.0
+margin_right = 260.0
+margin_bottom = 304.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile55" type="Button" parent="Grid"]
+margin_left = 264.0
+margin_top = 264.0
+margin_right = 304.0
+margin_bottom = 304.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile56" type="Button" parent="Grid"]
+margin_left = 308.0
+margin_top = 264.0
+margin_right = 348.0
+margin_bottom = 304.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile57" type="Button" parent="Grid"]
+margin_top = 308.0
+margin_right = 40.0
+margin_bottom = 348.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile58" type="Button" parent="Grid"]
+margin_left = 44.0
+margin_top = 308.0
+margin_right = 84.0
+margin_bottom = 348.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile59" type="Button" parent="Grid"]
+margin_left = 88.0
+margin_top = 308.0
+margin_right = 128.0
+margin_bottom = 348.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile60" type="Button" parent="Grid"]
+margin_left = 132.0
+margin_top = 308.0
+margin_right = 172.0
+margin_bottom = 348.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile61" type="Button" parent="Grid"]
+margin_left = 176.0
+margin_top = 308.0
+margin_right = 216.0
+margin_bottom = 348.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile62" type="Button" parent="Grid"]
+margin_left = 220.0
+margin_top = 308.0
+margin_right = 260.0
+margin_bottom = 348.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile63" type="Button" parent="Grid"]
+margin_left = 264.0
+margin_top = 308.0
+margin_right = 304.0
+margin_bottom = 348.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Tile64" type="Button" parent="Grid"]
+margin_left = 308.0
+margin_top = 308.0
+margin_right = 348.0
+margin_bottom = 348.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Tileasdfsdafasdf"
+clip_text = true
+
+[node name="Shop" type="HBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -13.0
+margin_top = -184.0
+margin_right = 13.0
+margin_bottom = -13.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_stretch_ratio = 7.67
+custom_constants/separation = 0
+alignment = 1
+
+[node name="CardHolder" type="PanelContainer" parent="Shop"]
+margin_right = 100.0
+margin_bottom = 171.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_min_size = Vector2( 100, 0 )
+rect_pivot_offset = Vector2( 13, 18 )
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.0
+
+[node name="Card" parent="Shop/CardHolder" instance=ExtResource( 1 )]
