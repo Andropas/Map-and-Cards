@@ -14,4 +14,7 @@ func _ready():
 	gold_label.text = str(price) + "g"
 
 func _on_Card_button_down():
-	pass # Replace with function body.
+	emit_signal("card_selected")
+
+func tile_filter(tile):
+	pass

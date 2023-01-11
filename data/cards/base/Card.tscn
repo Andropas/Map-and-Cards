@@ -16,10 +16,12 @@ margin_left = 5.0
 margin_top = 5.0
 margin_right = -5.0
 margin_bottom = -5.0
+mouse_filter = 2
 
 [node name="Header" type="HBoxContainer" parent="Stats"]
 margin_right = 76.0
 margin_bottom = 14.0
+mouse_filter = 2
 
 [node name="Gold" type="Label" parent="Stats/Header"]
 margin_right = 76.0
@@ -37,13 +39,14 @@ size_flags_vertical = 3
 text = "Name"
 align = 1
 
-[node name="Discription" type="RichTextLabel" parent="Stats"]
+[node name="Description" type="RichTextLabel" parent="Stats"]
 margin_top = 43.0
 margin_right = 76.0
 margin_bottom = 147.0
+mouse_filter = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 size_flags_stretch_ratio = 4.95
-text = "Discription"
+text = "Description"
 
 [connection signal="button_down" from="." to="." method="_on_Card_button_down"]
