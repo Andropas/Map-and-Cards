@@ -50,3 +50,5 @@ size_flags_stretch_ratio = 4.95
 text = "Description"
 
 [connection signal="button_down" from="." to="." method="_on_Card_button_down"]
+[connection signal="card_used" from="." to="." method="_on_card_used"]
+[connection signal="focus_exited" from="." to="." method="_on_focus_exited"]

@@ -3,17 +3,46 @@
 [ext_resource path="res://data/cards/base/Card.tscn" type="PackedScene" id=1]
 [ext_resource path="res://data/game/Game.gd" type="Script" id=2]
 [ext_resource path="res://data/game/Grid.gd" type="Script" id=3]
-[ext_resource path="res://data/game/Tile.gd" type="Script" id=4]
 [ext_resource path="res://data/game/grass.png" type="Texture" id=5]
 [ext_resource path="res://data/game/water_tilesheet.png" type="Texture" id=6]
 [ext_resource path="res://data/game/tree_tilesheet.png" type="Texture" id=7]
 [ext_resource path="res://data/game/IMG_20230111_113243_053.png" type="Texture" id=8]
 
-[sub_resource type="TileSet" id=1]
+[sub_resource type="TileSet" id=4]
 0/name = "grass.png 0"
 0/texture = ExtResource( 5 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 26, 20 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+1/name = "IMG_20230111_113243_053.png 1"
+1/texture = ExtResource( 8 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 0, 0, 26, 20 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+
+[sub_resource type="TileSet" id=1]
+0/name = "grass.png 0"
+0/texture = ExtResource( 5 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 0.215686, 1, 0, 0.431373 )
 0/region = Rect2( 0, 0, 26, 20 )
 0/tile_mode = 0
 0/occluder_offset = Vector2( 0, 0 )
@@ -92,23 +121,39 @@
 [node name="Game" type="Node2D"]
 script = ExtResource( 2 )
 
+[node name="BackgroundLayer" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="Button" type="Button" parent="BackgroundLayer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+focus_mode = 1
+enabled_focus_mode = 1
+
 [node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 383, 304 )
 current = true
 
 [node name="Grid" type="Node2D" parent="."]
 script = ExtResource( 3 )
+columns = 10
+rows = 10
 camera_path = NodePath("../Camera2D")
 
-[node name="Tile" type="Node2D" parent="Grid"]
-script = ExtResource( 4 )
-
 [node name="Grass" type="TileMap" parent="Grid"]
+scale = Vector2( 3, 3 )
+tile_set = SubResource( 4 )
+cell_size = Vector2( 26, 20 )
+cell_y_sort = true
+format = 1
+tile_data = PoolIntArray( 0, 1, 0, 1, 0, 0, 2, 1, 0, 3, 0, 0, 4, 1, 0, 5, 0, 0, 6, 1, 0, 7, 0, 0, 8, 1, 0, 9, 0, 0, 65536, 0, 0, 65537, 1, 0, 65538, 0, 0, 65539, 1, 0, 65540, 0, 0, 65541, 1, 0, 65542, 0, 0, 65543, 1, 0, 65544, 0, 0, 65545, 1, 0, 131072, 1, 0, 131073, 0, 0, 131074, 1, 0, 131075, 0, 0, 131076, 1, 0, 131077, 0, 0, 131078, 1, 0, 131079, 0, 0, 131080, 1, 0, 131081, 0, 0, 196608, 0, 0, 196609, 1, 0, 196610, 0, 0, 196611, 1, 0, 196612, 0, 0, 196613, 1, 0, 196614, 0, 0, 196615, 1, 0, 196616, 0, 0, 196617, 1, 0, 262144, 1, 0, 262145, 0, 0, 262146, 1, 0, 262147, 0, 0, 262148, 1, 0, 262149, 0, 0, 262150, 1, 0, 262151, 0, 0, 262152, 1, 0, 262153, 0, 0, 327680, 0, 0, 327681, 1, 0, 327682, 0, 0, 327683, 1, 0, 327684, 0, 0, 327685, 1, 0, 327686, 0, 0, 327687, 1, 0, 327688, 0, 0, 327689, 1, 0, 393216, 1, 0, 393217, 0, 0, 393218, 1, 0, 393219, 0, 0, 393220, 1, 0, 393221, 0, 0, 393222, 1, 0, 393223, 0, 0, 393224, 1, 0, 393225, 0, 0, 458752, 0, 0, 458753, 1, 0, 458754, 0, 0, 458755, 1, 0, 458756, 0, 0, 458757, 1, 0, 458758, 0, 0, 458759, 1, 0, 458760, 0, 0, 458761, 1, 0, 524288, 1, 0, 524289, 0, 0, 524290, 1, 0, 524291, 0, 0, 524292, 1, 0, 524293, 0, 0, 524294, 1, 0, 524295, 0, 0, 524296, 1, 0, 524297, 0, 0, 589824, 0, 0, 589825, 1, 0, 589826, 0, 0, 589827, 1, 0, 589828, 0, 0, 589829, 1, 0, 589830, 0, 0, 589831, 1, 0, 589832, 0, 0, 589833, 1, 0 )
+
+[node name="GreenHighlight" type="TileMap" parent="Grid"]
 scale = Vector2( 3, 3 )
 tile_set = SubResource( 1 )
 cell_size = Vector2( 26, 20 )
 cell_y_sort = true
 format = 1
-tile_data = PoolIntArray( -262149, 1, 0, -262148, 0, 0, -262147, 1, 0, -262146, 0, 0, -262145, 1, 0, -327680, 0, 0, -327679, 1, 0, -327678, 0, 0, -327677, 1, 0, -327676, 0, 0, -196613, 0, 0, -196612, 1, 0, -196611, 0, 0, -196610, 1, 0, -196609, 0, 0, -262144, 1, 0, -262143, 0, 0, -262142, 1, 0, -262141, 0, 0, -262140, 1, 0, -131077, 1, 0, -131076, 0, 0, -131075, 1, 0, -131074, 0, 0, -131073, 1, 0, -196608, 0, 0, -196607, 1, 0, -196606, 0, 0, -196605, 1, 0, -196604, 0, 0, -65541, 0, 0, -65540, 1, 0, -65539, 0, 0, -65538, 1, 0, -65537, 0, 0, -131072, 1, 0, -131071, 0, 0, -131070, 1, 0, -131069, 0, 0, -131068, 1, 0, -5, 1, 0, -4, 0, 0, -3, 1, 0, -2, 0, 0, -1, 1, 0, -65536, 0, 0, -65535, 1, 0, -65534, 0, 0, -65533, 1, 0, -65532, 0, 0, 65531, 0, 0, 65532, 1, 0, 65533, 0, 0, 65534, 1, 0, 65535, 0, 0, 0, 1, 0, 1, 0, 0, 2, 1, 0, 3, 0, 0, 4, 1, 0, 131067, 1, 0, 131068, 0, 0, 131069, 1, 0, 131070, 0, 0, 131071, 1, 0, 65536, 0, 0, 65537, 1, 0, 65538, 0, 0, 65539, 1, 0, 65540, 0, 0, 196603, 0, 0, 196604, 1, 0, 196605, 0, 0, 196606, 1, 0, 196607, 0, 0, 131072, 1, 0, 131073, 0, 0, 131074, 1, 0, 131075, 0, 0, 131076, 1, 0, 262139, 1, 0, 262140, 0, 0, 262141, 1, 0, 262142, 0, 0, 262143, 1, 0, 196608, 0, 0, 196609, 1, 0, 196610, 0, 0, 196611, 1, 0, 196612, 0, 0, 327675, 0, 0, 327676, 1, 0, 327677, 0, 0, 327678, 1, 0, 327679, 0, 0, 262144, 1, 0, 262145, 0, 0, 262146, 1, 0, 262147, 0, 0, 262148, 1, 0 )
 
 [node name="Water" type="TileMap" parent="Grid"]
 scale = Vector2( 3, 3 )
@@ -116,7 +161,7 @@ tile_set = SubResource( 2 )
 cell_size = Vector2( 26, 20 )
 cell_y_sort = true
 format = 1
-tile_data = PoolIntArray( -262149, 0, 0, -262148, 0, 0, -262147, 0, 0, -262146, 0, 0, -262145, 0, 0, -327680, 0, 0, -327676, 0, 0, -196613, 0, 0, -262141, 1, 8, -262140, 0, 0, -131077, 0, 0, -65541, 0, 0, -131072, 1, 0, -131071, 1, 131073, -131070, 1, 2, -2, 1, 0, -1, 1, 1, -65536, 1, 131074, -65534, 1, 65538, -65532, 0, 0, 65532, 0, 0, 65534, 1, 65536, 2, 1, 65538, 4, 0, 0, 131067, 1, 393220, 131068, 1, 327689, 131069, 1, 1, 131070, 1, 393221, 131071, 1, 131073, 65536, 1, 131073, 65537, 1, 327689, 65538, 1, 393221, 65539, 1, 327689, 65540, 1, 262150, 262142, 0, 0, 262143, 0, 0, 196608, 0, 0, 196612, 0, 0, 327675, 0, 0, 327676, 0, 0, 327677, 0, 0, 327678, 0, 0, 327679, 0, 0, 262144, 0, 0, 262145, 0, 0, 262147, 0, 0, 262148, 0, 0 )
+tile_data = PoolIntArray( 0, 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 5, 0, 0, 9, 0, 0, 65536, 0, 0, 65544, 1, 8, 65545, 0, 0, 131072, 0, 0, 196608, 0, 0, 196613, 1, 0, 196614, 1, 131073, 196615, 1, 2, 262147, 1, 0, 262148, 1, 1, 262149, 1, 131074, 262151, 1, 65538, 262153, 0, 0, 327681, 0, 0, 327683, 1, 65536, 327687, 1, 65538, 327689, 0, 0, 393216, 1, 393220, 393217, 1, 327689, 393218, 1, 1, 393219, 1, 393221, 393220, 1, 131073, 393221, 1, 131073, 393222, 1, 327689, 393223, 1, 393221, 393224, 1, 327689, 393225, 1, 262150, 524291, 0, 0, 524292, 0, 0, 524293, 0, 0, 524297, 0, 0, 589824, 0, 0, 589825, 0, 0, 589826, 0, 0, 589827, 0, 0, 589828, 0, 0, 589829, 0, 0, 589830, 0, 0, 589832, 0, 0, 589833, 0, 0 )
 
 [node name="Tree" type="TileMap" parent="Grid"]
 scale = Vector2( 3, 3 )
@@ -124,13 +169,16 @@ tile_set = SubResource( 3 )
 cell_size = Vector2( 26, 20 )
 cell_y_sort = true
 format = 1
-tile_data = PoolIntArray( -262147, 0, 0, -327676, 0, 2, -196609, 0, 4, -262143, 0, 6, -131076, 0, 2, -196604, 0, 0, -65537, 0, 6, -3, 0, 0, -65533, 0, 0, 65531, 0, 2, 1, 0, 4, 4, 0, 0, 131074, 0, 6, 262139, 0, 0, 196608, 0, 0, 196612, 0, 0, 327677, 0, 4, 327679, 0, 0, 262146, 0, 6 )
+tile_data = PoolIntArray( 2, 0, 0, 9, 0, 2, 65540, 0, 4, 65542, 0, 6, 131073, 0, 2, 131081, 0, 0, 196612, 0, 6, 262146, 0, 0, 262152, 0, 0, 327680, 0, 2, 327686, 0, 4, 327689, 0, 0, 458759, 0, 6, 524288, 0, 0, 524293, 0, 0, 524297, 0, 0, 589826, 0, 4, 589828, 0, 0, 589831, 0, 6 )
+
+[node name="Tiles" type="Node2D" parent="Grid"]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Control" type="Control" parent="CanvasLayer"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+mouse_filter = 2
 
 [node name="Shop" type="HBoxContainer" parent="CanvasLayer/Control"]
 anchor_left = 0.5

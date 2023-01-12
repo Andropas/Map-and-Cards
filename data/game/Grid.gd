@@ -2,12 +2,24 @@ extends Node2D
 
 export var columns = 8
 export var rows = 8
+var Tile = preload("res://data/game/Tile.tscn")
+
 export (NodePath) var camera_path
 onready var camera = get_node(camera_path)
 var cam_speed = Vector2()
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CONFINED)
+	generate_map()
+
+func generate_map():
+	for c in range(columns):
+		for r in range(rows):
+			var tile = Tile.instance()
+			tile.coords = Vector2(c, r)
+			tile.rect_position = Vector2(c*26*3, r*20*3)
+			tile.rect_size = Vector2(26*3, 20*3)
+			get_node("Tiles").add_child(tile)
 
 func _input(event):
 	if event is InputEventMouseMotion:
@@ -28,3 +40,12 @@ func _input(event):
 func _process(delta):
 	if cam_speed:
 		camera.offset += cam_speed*250*delta * camera.zoom
+
+func _on_card_selected(card):
+	for tile in get_node("Tiles").get_children():
+		if card.tile_filter(tile):
+			tile.highlight_green(true, card)
+
+func _on_card_unselected(card):
+	for tile in get_node("Tiles").get_children():
+		tile.highlight_green(false)
